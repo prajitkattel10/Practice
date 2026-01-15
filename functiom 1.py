@@ -1,8 +1,20 @@
-def barcelona(a, b):
-    total = a + b
-    print(total)
+class Student:
+    def __init__(self, name, age, branch):
+        self.name = name
+        self.age = age
+        self.branch = branch
 
-a = int(input("Enter a number = "))
-b = int(input("Enter another number = "))
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Branch:", self.branch)
 
-barcelona(a, b)
+
+
+s1 = Student("Prajit", 20, "IT")
+s2 = Student("Messi", 36, "Football")
+
+
+s1.display()
+print()
+s2.display()
